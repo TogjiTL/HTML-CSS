@@ -1,0 +1,73 @@
+Formatage texte :
+<hr>     -> séparateur
+<strong> -> texte important
+<em>     -> texte a une importance
+<del>    -> texte obsolète/remplacé futurement/à mettre à jour
+<ins>    -> va avec del (sémentique) pour montrer l'obsolescence de l'ancienne info
+<mark>   -> surligne
+<b>      -> gras : mettre en évidence un texte (- fort que strong)
+<i>      -> texte appart
+<s>      -> barre le texte : pas correct
+
+-> Hierarchie de paragraphes
+<h1> -> plus grand titre
+.
+.
+.
+<h6>            -> plus petit titre
+<q>             -> citation (quotes) --> <q cite="source">
+<cite>          -> cite oeuvre
+<blockquote>    -> cite paragraphe --> <blockquote cite="source">
+<details>       -> pour éviter un "spoil"
+<summary>       -> changer titre details
+<a href="site/mailto:adresse mail" title="titre" target="_blank"> -> lien
+
+<abbr title="def">                   -> préciser une abréviation
+<address>                            -> adresse (italique)
+<dfn>                                -> mot/expression à définir
+<dl>                                 -> definition d'une liste de mots (<dt>Terme</dt><dd>Def</dd>)
+<dialog>                             -> voir javascript
+<progress value="progres" max="max"> -> barre de progrès
+<sup>                                -> exposant
+<sub>                                -> indice
+<wbr>                                -> coupe un mot
+
+Formatage technique :
+<code>   -> présenter du code
+<kbd>    -> présenter un raccourcis
+<meter>  -> valeurs numérique
+<output> -> résultat
+<pre>    -> affichage comme dans éditeur (ex : <pre><code>...)
+<samp>   -> sortie prgm info
+<time>   -> date(datetime)
+<var>    -> affectation à variables
+
+Listes :
+<ul><li></li>...</ul>
+<ol reversed/start="debut"/type="a/1/I"> -> liste ordonée
+
+Tableaux :
+<table>
+<caption>                         -> titre
+<thead>/<th abbr="abr"/id="id">   -> en-tête/titre colonne
+<tbody>                           -> corps
+<tfoot>                           -> pied
+<tr>                              -> ligne
+<td colspan="2"/headers="id">     -> colonne (2 colonnes dans 1)
+<colgroup><col class="style1">... -> pour css
+
+Formulaires :
+<form method="get" action="resultat.php" name="nom" target="_self(défaut)/_parent/_blanck" autocomplete="on" enctype="" accept-charset"UTF-8>
+
+<p><label for="id">nomLabel<input id="id" name="nomSémantique" type="reset/text/password/checkbox/radio/color/date/datetime-local/email/tel/month/week/search/range/number/hidden" autocomplete="" pattern="" name="choice(checkbox)placeholder="indication" required> -> champ
+
+<input type="submit" value="text">
+<fieldset form="idForm"><lengend>NomSection..                                                -> liste champs
+<textarea name="nom" rows="x" cols="y" placeholder="..." minlength="minCar" wrap="soft/hard> -> grand champs
+<select name="nom" size="nbargs" form="id" required><option value="abr">...</option>...      -> champs de séléction
+<select name="nom"><optgroupe label="nomLabel" multiple><option value="abr" disabled>...
+<button type="button" formaction="page.html" type="submit">                                  -> bouton
+
+Images :
+<figure><img src="chemin" alt="alternative" width="largeur" height="hauteur/auto?"><figcaption>...
+<map name="nom"><area href="chemin" shape="rect" coords="x1,y1,x2,y2">
