@@ -71,3 +71,46 @@ Formulaires :
 Images :
 <figure><img src="chemin" alt="alternative" width="largeur" height="hauteur/auto?"><figcaption>...
 <map name="nom"><area href="chemin" shape="rect" coords="x1,y1,x2,y2">
+
+shape = rect   -> x1,y1,x2,y2
+        circle -> x, y, r
+        poly   -> x1,y1,...,x10,y10
+
+<picture>
+    <source srcset="img">
+    <img src="img">
+</picture>
+
+Sons et vidéos :
+Audio : mp3 (partout)
+        wav (sauf IE)
+        ogg (sauf IE et Safari)
+
+<audio src="src.mp3">
+ou
+<audio controls>
+<source src="src.mp3" type="audio/mp3">
+
+options : controls
+          autoplay -> démard automatiquement
+          muted    -> son coupé par défaut
+          loop     -> redémarre le son à la fin
+          preload  -> none/auto/metadata (utile pour accelération chargement)
+          volume   -> volume par défaut
+          
+
+Video : mp4 (partout)
+        webm(sauf IE et Safari)
+        ogg (sauf IE et Safari)
+
+<video>...
+
+Structurer une page web :
+<div>     -> bloc
+<main>    -> une seule (affichée) : partie principale de la page
+<section>
+<article> -> si peut être sur une autre page
+
+<header>
+<nav>
+<aside>
